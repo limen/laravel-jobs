@@ -11,7 +11,6 @@ use Limen\Jobs\Contracts\BaseJob;
 use Limen\Laravel\Jobs\Examples\Jobs\NoticeOneJob;
 use Limen\Laravel\Jobs\Examples\Jobs\NoticeTwoJob;
 use Limen\Laravel\Jobs\Models\JobModel;
-use Limen\Laravel\Jobs\Models\JobsetModel;
 
 class NoticeJobset extends BaseJobset
 {

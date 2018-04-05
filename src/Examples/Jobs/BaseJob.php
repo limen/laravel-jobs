@@ -14,7 +14,7 @@ use Limen\Laravel\Jobs\Models\JobModel;
 
 abstract class BaseJob extends Job
 {
-    public function makeModel($jobsetId)
+    protected function makeModel($jobsetId)
     {
         $model = new JobModel();
         $model->setName($this->name);

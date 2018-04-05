@@ -13,7 +13,6 @@ use Limen\Laravel\Jobs\Examples\Jobs\VisitHuangshanJob;
 use Limen\Laravel\Jobs\Examples\Jobs\VisitNanjingJob;
 use Limen\Laravel\Jobs\Examples\Jobs\VisitShanghaiJob;
 use Limen\Laravel\Jobs\Models\JobModel;
-use Limen\Laravel\Jobs\Models\JobsetModel;
 
 class TravelJobset extends BaseJobset
 {

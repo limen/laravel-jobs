@@ -7,7 +7,6 @@
 
 namespace Limen\Laravel\Jobs\Examples\Jobs;
 
-
 use Limen\Jobs\JobsConst;
 
 class VisitNanjingJob extends BaseJob
