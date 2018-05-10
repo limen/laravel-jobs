@@ -20,7 +20,7 @@ abstract class BaseJobset extends Jobset
         return JobsetModel::find($id);
     }
 
-    protected function makeModel()
+    protected function makeModel($attributes = [])
     {
         $now = date('Y-m-d H:i:s');
 
@@ -30,6 +30,11 @@ abstract class BaseJobset extends Jobset
         $model->setTryAt($now);
         $model->setCreatedAt($now);
         $model->setUpdatedAt($now);
+
+        foreach ($attributes as $attr => $value) {
+            $model->setAttribute($attr, $value);
+        }
+
         $model->persist();
 
         return $model;
